@@ -1,0 +1,57 @@
+body {
+  background: #111;
+}
+
+.arrowbtn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: rgb(255, 255, 255);
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 100px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  left: 50%;
+  line-height: 25px;
+  margin-left: -12.5px;
+  transition: all 0.25s ease-in-out;
+  transform: rotateZ(360deg);
+
+  
+}
+.arrowbtn:hover {
+  background: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+.arrowbtn:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 6.25px;
+  height: 6.25px;
+  top: 50%;
+  left: 50%;
+}
+
+.arrowbtn-up {
+  top: 20px;
+}
+.arrowbtn-up:after {
+  margin-left: -3.125px;
+  margin-top: -1.5625px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transform: rotateZ(45deg);
+}
+
+.arrowbtn-down {
+  bottom: 20px;
+}
+.arrowbtn-down:after {
+  margin-left: -3.125px;
+  margin-top: -4.6875px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotateZ(45deg);
+}

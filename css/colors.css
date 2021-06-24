@@ -1,0 +1,108 @@
+/* Webfont: Maleah-Regular */
+@font-face {
+  font-family: 'Maleah';
+  src: url('/fonts/Web/Maleah-Regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Web/Maleah-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Web/Maleah-Regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/Web/Maleah-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Web/Maleah-Regular.svg#Maleah-Regular') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;}
+
+  /* Webfont: Glypher */
+@font-face {
+  font-family: 'Glypher';
+  src: url('/fonts/Glypher\ Regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Glypher\ Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /*url('/fonts/Web/Maleah-Regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/Glypher\ Regular.ttf') format('truetype');/* Safari, Android, iOS */
+       /*url('/fonts/Web/Maleah-Regular.svg#Maleah-Regular') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.gradient-text {
+    transition: all 1s ease;
+    color: #FF1361;
+    background-color: #FF1361;
+    background: -o-linear-gradient(left, #FFF800 10% , #FF1361, #44107A, #7794ff);
+    background: -webkit-linear-gradient(left, #FFF800 10% , #FF1361, #44107A, #7794ff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-text.text1 {
+  -webkit-animation: dancingColors 2s infinite forwards ease-in-out;
+          animation: dancingColors 2s infinite forwards ease-in-out;
+ 
+}
+.gradient-text.text2 {
+  -webkit-animation: dancingColors 2s -0.5s infinite forwards ease-in-out;
+          animation: dancingColors 2s -0.5s infinite forwards ease-in-out;
+}
+  
+
+@media screen and (min-width:0\0) {
+    /* IE9 and IE10 hack */
+    .gradient-text {
+        background: transparent;
+    }
+}
+
+@-moz-document url-prefix() {
+  /* Firefox hack */
+.gradient-text {
+    background-color: transparent;
+    }
+}
+
+body {
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+.gradient-text.text1 {
+  font-size: 40px;
+  font-size: calc(40px + (80 - 20) * (100vw - 400px) / (1000 - 400));
+  font-family: 'Maleah';
+  letter-spacing: 5px;
+}
+.gradient-text.text2 {
+  font-size: 30px;
+  font-size: calc(20px + (80 - 20) * (100vw - 400px) / (1000 - 400));
+  font-family: 'Maleah';
+}
+.text3 {
+  font-family: 'Glypher';
+  font-size: calc(20px + (30 - 20) * (100vw - 400px) / (1000 - 400));
+}
+
+
+@-webkit-keyframes dancingColors {
+  50% {
+    background: -webkit-linear-gradient(left, #FF1361, #44107A, #7794ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-position: -860px;
+  }
+}
+
+@keyframes dancingColors {
+  50% {
+    background: -webkit-linear-gradient(left, #FF1361, #44107A, #7794ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-position: -860px;
+  }
+}

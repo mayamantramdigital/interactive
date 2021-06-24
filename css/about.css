@@ -1,0 +1,106 @@
+/* Webfont: League Spartan Regular */
+@font-face {
+    font-family: 'League Spartan Regular';
+    src: url('/fonts/League/Regular.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/League/Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/League/Regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/League/Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/League/Regular.svg') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Introscript';
+    src: url('/fonts/IntroScriptDemo-Medium.otf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+  
+  body {
+    background: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .text3 {
+    font-family: 'League Spartan Regular';
+    color: rgb(255, 255, 255);
+    font-size: calc(10px + (30 - 20) * (100vw - 400px) / (1000 - 400));
+  }
+
+  .text4 {
+    font-family: 'Introscript';
+    color: rgb(255, 255, 255);
+    font-size: calc(15px + (30 - 20) * (100vw - 400px) / (1000 - 400));
+}
+
+.text5 {
+  font-family: 'League Spartan Regular';
+  color: rgb(255, 255, 255);
+  font-size: calc(10px + (30 - 20) * (100vw - 400px) / (1000 - 400));
+}
+
+  .spacing {
+    line-height: 1.5;
+  }
+
+  .zero {
+    padding-top: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @font-face {
+    font-family: 'Maleah';
+    src: url('/fonts/Web/Maleah-Regular.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/Web/Maleah-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/Web/Maleah-Regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/Web/Maleah-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/Web/Maleah-Regular.svg#Maleah-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;}
+  
+  body {
+      background-color:#ce3635;
+      text-align: center;
+      color:#fff;
+      font-family: 'Maleah';
+    }
+    
+    * { color:#fff; text-decoration: none;}
+  
+  
+  
+  body {
+    -webkit-animation: background 10s cubic-bezier(1,0,0,1) infinite;
+    animation: background 10s cubic-bezier(1,0,0,1) infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  
+  
+  @-webkit-keyframes background {
+    0% { background-color: #f99; }
+    33% { background-color: #9f9; }
+    67% { background-color: #99f; }
+    100% { background-color: #f99; }
+  }
+  
+  @keyframes background {
+    0% { background-color: #f99; }
+    33% { background-color: #9f9; }
+    67% { background-color: #99f; }
+    100% { background-color: #f99; }
+  }
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
